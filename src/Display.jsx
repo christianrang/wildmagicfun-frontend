@@ -64,8 +64,8 @@ export default function Display(props) {
     return (
         <AffectDiv>
             <Card sx={{ 
-                width: '225px',
-                height: '175px',
+                width: '275px',
+                height: '200px',
                 backgroundColor: '#320866',
                 fontColor: '#a160f2',
             }}
