@@ -7,7 +7,7 @@ const CenterDiv = styledComp.div`
     font-color: #320866; 
     color: #3f0a81;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
