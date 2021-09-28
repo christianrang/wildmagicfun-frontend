@@ -3,6 +3,8 @@ import Display from "./Display";
 import Roll from "./Roll";
 import styledComp from "styled-components";
 
+// color theme: https://colordesigner.io/#25064C-36175E-553285-7B52AB-9768D1
+
 const CenterDiv = styledComp.div`
     font-color: #320866; 
     color: #3f0a81;
