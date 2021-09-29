@@ -7,6 +7,8 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import InputBase from '@mui/material/InputBase';
 import Button from "@mui/material/Button";
+import Card from '@mui/material/Card';
+import CardContent from "@mui/material/CardContent";
 
 const RollDiv = styledComp.div`
     // font-color: #320866; 
@@ -31,10 +33,10 @@ const BootstrapInput = styled(InputBase)(({ theme }) => ({
     '& .MuiInputBase-input': {
       borderRadius: 4,
       position: 'relative',
-      border: '1px solid #320866',
+      border: '1px solid #580eb6',
       fontSize: 16,
       padding: '10px 26px 10px 12px',
-      color: '#9146f0',
+      color: '#e0cafb',
       transition: theme.transitions.create(['border-color', 'box-shadow']),
       // Use the system font instead of the default Roboto font.
       fontFamily: [
@@ -51,7 +53,7 @@ const BootstrapInput = styled(InputBase)(({ theme }) => ({
       ].join(','),
       '&:focus': {
         borderRadius: 4,
-        borderColor: '#580eb6',
+        borderColor: '#9146f0',
         boxShadow: '0 0 0 0.2rem rgba(50, 8, 102,.25)',
       },
     },
@@ -84,6 +86,13 @@ export default function Roll(props) {
   
     return (
       <RollDiv>
+      <Card
+        sx={{
+          bgcolor: "#320866",
+          borderRadius: 2.5,
+        }}
+      >
+      <CardContent>
         <FormControl sx={{ m: 1, minWidth: 120}} variant="standard">
           <InputLabel id="d20-select-helper-label" focused={false} sx={{color: '#9146f0'}}>D20</InputLabel>
           <Select
@@ -120,6 +129,8 @@ export default function Roll(props) {
             ))}
           </Select>
         </FormControl>
+        </CardContent>
+      </Card>
         <ButtonDiv>
           <Button variant="text" sx={{color: "#a160f2"}} onClick={handleButtonClick}>Roll</Button>
         </ButtonDiv>
